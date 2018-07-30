@@ -1,0 +1,48 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "linebreak-style": 0,
+    "camelcase": 0,
+    "no-nested-ternary": 0,
+    "consistent-return": 0,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "max-len": [
+      1,
+      120,
+      2,
+      {
+        "ignoreComments": true
+      }
+    ],
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "comma-dangle": [
+      "warn",
+      "never"
+    ],
+    "object-curly-newline": "off",
+    "class-methods-use-this": "off",
+    "no-shadow": "off",
+    "import/prefer-default-export": "off"
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "prettier/react",
+    "plugin:react/recommended"
+  ]
+}

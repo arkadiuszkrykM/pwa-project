@@ -1,0 +1,10 @@
+.box {
+  border: 1px solid black;
+}
+
+.movies {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
